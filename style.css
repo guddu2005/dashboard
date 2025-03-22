@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap');
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #e3f0ff, #fafbff);
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    width: calc(100% - 10rem);
+    padding-left:10rem;
+}
+
+/* Layout Sections */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.staking-offerings {
+    width: 68%;
+    padding: 5px;
+    font-size: xx-small;
+    font-weight: 500;
+}
+
+/* Offer Box Styling */
+.offer-box {
+    background-color: #ffffff;
+    width: 33%;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Offer Box 1 */
+.offer-box-1 {
+    background-color: white;
+    border-radius: 5px;
+    height: 172px;
+    width: 33%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: xx-small;
+}
+
+/* Stake Now Button */
+#stake-now {
+    background-color: #0a9afa;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    width: 50%;
+    font-size: xx-small;
+}
+
+/* Offer Box 2 & 3 */
+.offer-box-2,
+.offer-box-3 {
+    /* background-color: white; */
+    border-radius: 5px;
+    width: 32%;
+}
+
+/* Upper Box Styling */
+.upper-box {
+    padding: 10px;
+    font-weight: bold;
+    font-size: xx-small;
+    height: 80px;
+    border-radius: 5px;
+    background-color: white;
+}
+.icon-box-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Icon and Image Box */
+.icon-box {
+    display: flex;
+    /* justify-content: space-; */
+    align-items: center;
+    gap: 10px;
+}
+
+.image-box {
+    background-color: #d6e4ff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    width: 20px;
+    height: 20px;
+}
+.image-box-content{
+   margin-left: 6rem;
+}
+
+/* APY Section */
+.apy-info {
+    text-align: center;
+    font-size: xx-small;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Stake Info */
+.stake-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.stake-button {
+    background-color: #0a99ff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: xx-small;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* Wallet Section */
+.staking-wallet {
+    width: 30%;
+    font-size: xx-small;
+    font-weight: 200;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+/* Wallet Nav */
+.wallet-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+
+#nav-1 {
+    font-weight: bold;
+    font-size: xx-small;
+}
+
+/* Wallet Box */
+.staking-wallet-box {
+    background-color: #0a99ff;
+    border-radius: 5px;
+    color: white;
+    font-size: xx-small;
+    font-weight: 200;
+    height: 160px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#balance {
+    font-weight: bold;
+    font-size: small;
+    font-weight: 300;
+}
+
+/* Transfer & Top-up Buttons */
+#transfer-button {
+    background-color: #0a99ff;
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: xx-small;
+}
+
+#top-up-button {
+    color: black;
+    font-size: xx-small;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+#wallet-buttons {
+    width: 130px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Claimed Section */
+#claimed {
+    display: flex;
+    justify-content: space-between;
+}
+
+#balance-staked {
+    font-weight: bold;
+    font-size: xx-small;
+    font-weight: 300;
+}
+
+/* Offering Section */
+.offering-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.offering-box {
+    color: black;
+    font-size: smaller;
+    font-weight: 200;
+    height: 160px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+/* Locked Staking Section */
+#locked,
+#locked-staked,
+#active-staked {
+    text-decoration: underline;
+    margin-right: 8px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+/* Text Opacity */
+.text-opacity {
+    opacity: 0.5;
+}
+
+/* Additional Content */
+.additional-content {
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.stake-button{
+    background-color: #f0f0f0;
+    color: black;
+    margin-left: 2px;
+}
+
+
+#query-activation{
+    width: 67.5%;
+}
+#main-seaction{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin-top: 20px;
+    padding: 5px;
+}
+/* .query-seaction{ */
+    /* display: flex; */
+/* } */
+.query-box{
+    background-color: white;
+    border: 1px solid #f0f2f4;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#reward-statistics{
+    width: 30%;
+    margin-left: 25px;
+}
+
+.reward-box{
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(101, 100, 100, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+}
+.interest{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+.font-opacity{
+    font-size: small;
+    font-weight: bold;
+    opacity: 0.8;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+#font-smaller{
+    font-size: xx-small;
+    font-weight: 400;
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+#font-bolder{
+    font-size: smaller;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+#link-tab{
+    font-size: xx-small;
+    font-weight: bold;
+    opacity: 0.5;
+    color: #0a97fc;
+    text-decoration: none;
+}
+
+#font-back{
+    font-size: xx-small;
+    background-color:#f4f0f0 ;
+    border-radius: 3px;
+    padding: 4px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.stake-activation{
+    margin-top: 20px;
+    /* padding: 5px; */
+
+}
+.activation-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 0px;
+}
+.activation-content{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.activation-container{
+    display: flex;
+    justify-content: space-between;
+}
+.right-content{
+    width: 60%;
+}
+.right-content table{
+    width: 100%;
+    border-spacing: 20px 15px; 
+}
+.right-content td {
+    padding: 0px 25px 0px 10px; 
+}
+.left-content{
+    width:40%;
+}
+#table-back{
+    font-size: xx-small;
+    background-color:#f4f0f0 ;
+    border-radius: 3px;
+    padding:5px;
+    /* text-align: center; */
+    font-weight: bold;
+    opacity: 0.8;
+    width: 100px;
+}
+#table-smaller{
+    font-size: xx-small;
+    font-weight: 600;
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+table {
+    border-spacing: 20px 20px; 
+}
+
+td {
+    padding: 0px 25px 0px 10px; 
+}
+#table-smaller-left{
+    font-size: xx-small;
+    font-weight: 600;
+    opacity: 0.5;
+    margin-bottom: 5px;
+    text-align: end;
+}
+.activation-lower{
+    padding: 0px 30px 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.activation-buttons{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+#cancel-button{
+    background-color: white;
+    color: black;
+    border: 2px solid #c0c1c3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: xx-small;
+    font-weight: 600;
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+.interest-heading{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+#blue-text{
+    color: #0a97fc;
+}
+.interest-content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 1px 1px rgba(101, 100, 100, 0.1);
+    height: 268px;
+}
